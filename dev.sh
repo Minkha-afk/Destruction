@@ -15,7 +15,7 @@ services=(
   "chat:backend/chat-service:5000"
   "course:backend/course-service:6100"
   "search:backend/search-service:7000"
-  "web:frontend/my-app:3000"
+  "web:my-app:3000"
 )
 
 pids=()

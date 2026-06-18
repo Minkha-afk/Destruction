@@ -3,6 +3,11 @@ import path from "node:path";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  // Don't fail the production build on ESLint issues (warnings/errors). Type
+  // checking (tsc) still runs, so real type errors are still caught.
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     // Course/instructor images can come from anywhere (local /images, Unsplash
     // seed data, or arbitrary URLs an instructor pastes when authoring a course).

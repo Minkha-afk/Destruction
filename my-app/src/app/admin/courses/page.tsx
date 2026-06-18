@@ -155,7 +155,7 @@ export default function AdminCoursesPage() {
               </h1>
               <p className="text-sm text-muted-foreground mt-2 flex items-center gap-1.5">
                 <Layers className="h-3.5 w-3.5" />
-                {courses.length} course{courses.length !== 1 ? "s" : ""} you've created
+                {courses.length} course{courses.length !== 1 ? "s" : ""} in your catalog
               </p>
             </div>
             <div className="relative flex gap-2">

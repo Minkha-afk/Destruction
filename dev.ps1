@@ -20,7 +20,7 @@ $services = @(
   @{ Name = "chat";   Path = "backend/chat-service";   Port = 5000 },
   @{ Name = "course"; Path = "backend/course-service"; Port = 6100 },
   @{ Name = "search"; Path = "backend/search-service"; Port = 7000 },
-  @{ Name = "web";    Path = "frontend/my-app";        Port = 3000 }
+  @{ Name = "web";    Path = "my-app";        Port = 3000 }
 )
 
 Write-Host ""
