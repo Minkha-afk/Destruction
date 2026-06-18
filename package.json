@@ -1,0 +1,22 @@
+{
+  "name": "elevana",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Elevana e-learning platform — root launcher for all microservices + frontend",
+  "scripts": {
+    "dev": "concurrently -k -n auth,chat,course,search,web -c blue,magenta,green,yellow,cyan \"cd backend/auth-services && npm run dev\" \"cd backend/chat-service && npm run dev\" \"cd backend/course-service && npm run dev\" \"cd backend/search-service && npm run dev\" \"cd frontend/my-app && npm run dev\"",
+    "dev:backend": "concurrently -k -n auth,chat,course,search -c blue,magenta,green,yellow \"cd backend/auth-services && npm run dev\" \"cd backend/chat-service && npm run dev\" \"cd backend/course-service && npm run dev\" \"cd backend/search-service && npm run dev\"",
+    "dev:auth": "cd backend/auth-services && npm run dev",
+    "dev:chat": "cd backend/chat-service && npm run dev",
+    "dev:course": "cd backend/course-service && npm run dev",
+    "dev:search": "cd backend/search-service && npm run dev",
+    "dev:web": "cd frontend/my-app && npm run dev",
+    "start": "npm run dev",
+    "install:all": "npm install && npm --prefix backend/auth-services install && npm --prefix backend/chat-service install && npm --prefix backend/course-service install && npm --prefix backend/search-service install && npm --prefix frontend/my-app install",
+    "seed": "cd backend/search-service && npm run seed",
+    "setup": "npm run install:all && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

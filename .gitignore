@@ -1,0 +1,38 @@
+# ── Dependencies ─────────────────────────────────────────────
+node_modules/
+
+# ── Build output ─────────────────────────────────────────────
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# ── Environment & secrets (templates .env.example ARE committed) ──
+**/.env
+**/.env.*
+!**/.env.example
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS / editor ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ── Misc ─────────────────────────────────────────────────────
+.turbo/
+.cache/
+
+# ── Personal Claude settings (shared settings.json is kept) ──
+.claude/settings.local.json
+SEEDING_GUIDE.md
+INTEGRATION_SETUP.md
+DEPLOYMENT.md       

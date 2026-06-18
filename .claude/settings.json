@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(node -e \"const i=require\\('lucide-react'\\); const names=['Compass','Sparkles','TrendingUp','SearchX','RotateCcw','ArrowRight','CheckCircle2','Loader2','Lock','Layers','Tag','Star','Users','Search','SlidersHorizontal','X','ChevronLeft','ChevronRight']; const missing=names.filter\\(n=>!i[n]\\); console.log\\(missing.length? 'MISSING: '+missing.join\\(', '\\) : 'ALL ICONS PRESENT'\\);\")",
+      "Bash(npx eslint *)",
+      "Bash(tee /tmp/tsc_out.txt)",
+      "Read(//tmp/**)",
+      "Bash(echo \"tsc exit: $?\")",
+      "Bash(echo \"=== eslint exit: $? ===\")",
+      "Bash(echo \"EXIT CODE: $?\")",
+      "Bash(echo \"ESLINT EXIT: $?\")",
+      "Bash(echo \"TSC EXIT: $?\")",
+      "Bash(xargs ls -la --time-style=+%H:%M)",
+      "Bash(awk '{print $6, $7}')",
+      "Bash(awk '{print $6, $7, $8}')",
+      "Read(//c/Users/LOQ/.claude/projects/c--MERN-PROJECTS-DESTRUCTION/memory/**)",
+      "Bash(npm install *)",
+      "Bash(npx concurrently *)",
+      "Bash(chmod +x dev.sh)",
+      "Bash(cmd //c \"cd backend/course-service && node -e \\\\\"console.log\\('cwd =', process.cwd\\(\\)\\)\\\\\"\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(cmd //c \"cd backend/auth-services && cd\")",
+      "Bash(cmd //c \"cd frontend/my-app && cd\")",
+      "Bash(ls -1t \"/c/Users/LOQ/.claude/projects\" 2>/dev/null | head -30; echo \"---- jsonl count ----\"; find \"/c/Users/LOQ/.claude/projects\" -name \"*.jsonl\" 2>/dev/null | wc -l)",
+      "Read(//c/Users/LOQ/.claude/projects/**)",
+      "Bash(node _permscan.js)",
+      "Bash(rm -f _permscan.js)",
+      "Bash(node _permscan2.js)",
+      "Bash(rm -f _permscan2.js)",
+      "Bash(ls -la .claude)",
+      "Bash(cat .claude/settings.json)",
+      "Bash(cat .claude/settings.local.json)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\LOQ\\.claude\\projects\\c--MERN-PROJECTS-DESTRUCTION\\memory"
+    ]
+  }
+}
