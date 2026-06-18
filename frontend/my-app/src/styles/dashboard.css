@@ -1,0 +1,151 @@
+/* ─── Elevana Dashboard — Modern Glassmorphism ─── */
+
+/* ── Timeline ── */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.6) 0%,
+    rgba(139, 92, 246, 0.3) 60%,
+    transparent 100%
+  );
+  filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.35));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 36px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.9) 0%, rgba(99, 102, 241, 0.7) 100%);
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.15),
+    0 0 14px rgba(99, 102, 241, 0.4);
+}
+
+/* ── Glow utilities ── */
+.hover\:shadow-glow:hover {
+  box-shadow:
+    0 8px 32px rgba(99, 102, 241, 0.22),
+    0 0 24px rgba(99, 102, 241, 0.16);
+}
+
+.shadow-glow {
+  box-shadow:
+    0 8px 32px rgba(99, 102, 241, 0.22),
+    0 0 24px rgba(99, 102, 241, 0.16);
+}
+
+/* ── Hide scrollbar ── */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Active nav glow ring ── */
+.glass-active {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.18) 0%,
+    rgba(139, 92, 246, 0.12) 100%
+  );
+  border-radius: 12px;
+  position: relative;
+}
+
+.glass-active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  box-shadow:
+    inset 0 0 0 1px rgba(99, 102, 241, 0.3),
+    0 0 0 2px rgba(99, 102, 241, 0.12);
+  pointer-events: none;
+}
+
+/* ── Progress bar fill ── */
+.progress > div[role="progressbar"] > div {
+  background-image: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.9) 0%,
+    rgba(139, 92, 246, 0.85) 50%,
+    rgba(168, 85, 247, 0.8) 100%
+  );
+}
+
+/* ── Glass card base ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(99, 102, 241, 0.14);
+  border-radius: 16px;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.28);
+  box-shadow:
+    0 8px 32px rgba(99, 102, 241, 0.18),
+    0 0 20px rgba(99, 102, 241, 0.1);
+}
+
+/* ── Sidebar glass ── */
+.sidebar-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.07) 0%,
+    rgba(139, 92, 246, 0.03) 100%
+  );
+  backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(99, 102, 241, 0.12);
+}
+
+/* ── Glass button ── */
+.glass-btn {
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  transition: all 0.2s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(99, 102, 241, 0.22);
+  border-color: rgba(99, 102, 241, 0.45);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+/* ── White text override for auth ── */
+.white-text {
+  color: white !important;
+}
+
+/* ── Badge glow ── */
+.badge-glow {
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.3);
+}
+
+/* ── Stat card ── */
+.stat-card {
+  background: rgba(99, 102, 241, 0.06);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.22);
+  transform: translateY(-1px);
+}

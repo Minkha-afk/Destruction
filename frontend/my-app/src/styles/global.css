@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ─── Elevana Design System — Page Override ─── */
+
+:root {
+  --background: oklch(0.987 0.003 265);
+  --foreground: oklch(0.11 0.012 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.11 0.012 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.11 0.012 262);
+  --primary: oklch(0.558 0.233 273.4);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.94 0.01 265);
+  --secondary-foreground: oklch(0.22 0.012 265);
+  --muted: oklch(0.94 0.01 265);
+  --muted-foreground: oklch(0.52 0.022 265);
+  --accent: oklch(0.715 0.143 215.2);
+  --accent-foreground: oklch(0.11 0.012 262);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.012 265);
+  --input: oklch(0.88 0.012 265);
+  --ring: oklch(0.558 0.233 273.4);
+  --chart-1: oklch(0.558 0.233 273.4);
+  --chart-2: oklch(0.715 0.143 215.2);
+  --chart-3: oklch(0.696 0.17 162.48);
+  --chart-4: oklch(0.769 0.188 70.08);
+  --chart-5: oklch(0.627 0.265 303.9);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.96 0.008 265);
+  --sidebar-foreground: oklch(0.11 0.012 262);
+  --sidebar-primary: oklch(0.558 0.233 273.4);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.90 0.015 265);
+  --sidebar-accent-foreground: oklch(0.558 0.233 273.4);
+  --sidebar-border: oklch(0.88 0.012 265);
+  --sidebar-ring: oklch(0.558 0.233 273.4);
+}
+
+.dark {
+  --background: oklch(0.08 0.022 261);
+  --foreground: oklch(0.97 0.005 265);
+  --card: oklch(0.13 0.025 263);
+  --card-foreground: oklch(0.97 0.005 265);
+  --popover: oklch(0.13 0.025 263);
+  --popover-foreground: oklch(0.97 0.005 265);
+  --primary: oklch(0.655 0.21 273);
+  --primary-foreground: oklch(0.08 0.022 261);
+  --secondary: oklch(0.18 0.032 265);
+  --secondary-foreground: oklch(0.97 0.005 265);
+  --muted: oklch(0.18 0.032 265);
+  --muted-foreground: oklch(0.62 0.018 265);
+  --accent: oklch(0.22 0.035 265);
+  --accent-foreground: oklch(0.97 0.005 265);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.25 0.035 265);
+  --input: oklch(0.25 0.035 265);
+  --ring: oklch(0.655 0.21 273);
+  --chart-1: oklch(0.655 0.21 273);
+  --chart-2: oklch(0.715 0.143 215.2);
+  --chart-3: oklch(0.696 0.17 162.48);
+  --chart-4: oklch(0.769 0.188 70.08);
+  --chart-5: oklch(0.627 0.265 303.9);
+  --sidebar: oklch(0.11 0.024 262);
+  --sidebar-foreground: oklch(0.97 0.005 265);
+  --sidebar-primary: oklch(0.655 0.21 273);
+  --sidebar-primary-foreground: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.18 0.032 265);
+  --sidebar-accent-foreground: oklch(0.97 0.005 265);
+  --sidebar-border: oklch(0.25 0.035 265);
+  --sidebar-ring: oklch(0.655 0.21 273);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ── Elevana Utilities ── */
+
+.hover\:shadow-glow:hover {
+  box-shadow:
+    0 8px 32px rgba(99, 102, 241, 0.22),
+    0 0 24px rgba(99, 102, 241, 0.16);
+}
+
+.shadow-glow {
+  box-shadow:
+    0 8px 32px rgba(99, 102, 241, 0.22),
+    0 0 24px rgba(99, 102, 241, 0.16);
+}
+
+.my-gradient {
+  background: linear-gradient(
+    135deg,
+    oklch(0.08 0.022 261) 0%,
+    oklch(0.10 0.03 270) 50%,
+    oklch(0.08 0.022 261) 100%
+  );
+}
+
+.myi-gradient {
+  background: linear-gradient(to right, oklch(0.08 0.022 261), transparent);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(139, 92, 246, 0.12);
+}
+
+.dark .glassmorphism {
+  background: rgba(30, 27, 75, 0.35);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.nav-frost {
+  background: rgba(10, 8, 20, 0.72) !important;
+  backdrop-filter: blur(20px) saturate(200%);
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+.glass-btn {
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  transition: all 0.2s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(99, 102, 241, 0.22);
+  border-color: rgba(99, 102, 241, 0.45);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

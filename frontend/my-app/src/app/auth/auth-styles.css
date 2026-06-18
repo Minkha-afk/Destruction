@@ -1,0 +1,275 @@
+ /* Adding all styles from page.tsx to separate CSS file and ensuring fixed background */
+
+/* Night Sky Background Styles */
+.night-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, #050714, #0a0d2e, #07081a);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.stars-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: #dbeafe;
+  border-radius: 50%;
+}
+
+.star-large {
+  width: 4px;
+  height: 4px;
+}
+
+.star-small {
+  width: 2px;
+  height: 2px;
+  opacity: 0.4;
+}
+
+.crescent-moon {
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.moon-glow {
+  position: absolute;
+  inset: 0;
+  background: rgba(191, 219, 254, 0.3);
+  border-radius: 50%;
+  filter: blur(24px);
+  transform: scale(1.5);
+}
+
+.moon-body {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #dbeafe, #bfdbfe);
+  border-radius: 50%;
+}
+
+.moon-shadow {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 5rem;
+  height: 5rem;
+  background: #050714;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.moon-crater-1 {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  width: 8px;
+  height: 8px;
+  background: rgba(191, 219, 254, 0.6);
+  border-radius: 50%;
+}
+
+.moon-crater-2 {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  width: 4px;
+  height: 4px;
+  background: rgba(191, 219, 254, 0.4);
+  border-radius: 50%;
+}
+
+.moon-crater-3 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  width: 6px;
+  height: 6px;
+  background: rgba(191, 219, 254, 0.5);
+  border-radius: 50%;
+}
+
+.city-silhouette {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12rem;
+}
+
+.building {
+  position: absolute;
+  bottom: 0;
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.building-1 {
+  left: 0;
+  width: 5rem;
+  height: 8rem;
+}
+.building-2 {
+  left: 4rem;
+  width: 4rem;
+  height: 10rem;
+  background: rgba(15, 23, 42, 0.9);
+}
+.building-3 {
+  left: 7rem;
+  width: 6rem;
+  height: 7rem;
+  background: rgba(30, 41, 59, 0.7);
+}
+.building-4 {
+  left: 12rem;
+  width: 4.5rem;
+  height: 11rem;
+  background: rgba(15, 23, 42, 0.85);
+}
+.building-5 {
+  left: 16rem;
+  width: 5.5rem;
+  height: 9rem;
+  background: rgba(30, 41, 59, 0.75);
+}
+.building-6 {
+  left: 20.5rem;
+  width: 5rem;
+  height: 8rem;
+  background: rgba(15, 23, 42, 0.8);
+}
+.building-7 {
+  left: 24.5rem;
+  width: 4rem;
+  height: 9.5rem;
+  background: rgba(30, 41, 59, 0.85);
+}
+
+.window {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.window-yellow {
+  background: rgba(253, 224, 71, 0.8);
+}
+.window-blue {
+  background: rgba(147, 197, 253, 0.6);
+}
+
+/* Window positions */
+.window-1 {
+  bottom: 2rem;
+  left: 0.5rem;
+}
+.window-2 {
+  bottom: 4rem;
+  left: 1.5rem;
+}
+.window-3 {
+  bottom: 3rem;
+  left: 4.5rem;
+}
+.window-4 {
+  bottom: 6rem;
+  left: 5.5rem;
+}
+.window-5 {
+  bottom: 2rem;
+  left: 7.5rem;
+}
+.window-6 {
+  bottom: 5rem;
+  left: 8.5rem;
+}
+.window-7 {
+  bottom: 4rem;
+  left: 12.5rem;
+}
+.window-8 {
+  bottom: 8rem;
+  left: 13.5rem;
+}
+.window-9 {
+  bottom: 3rem;
+  left: 16.5rem;
+}
+.window-10 {
+  bottom: 7rem;
+  left: 17.5rem;
+}
+.window-11 {
+  bottom: 2rem;
+  left: 21rem;
+}
+.window-12 {
+  bottom: 6rem;
+  left: 22rem;
+}
+.window-13 {
+  bottom: 4rem;
+  left: 25rem;
+}
+
+.atmospheric-cloud-1 {
+  position: absolute;
+  top: 8rem;
+  left: 25%;
+  width: 16rem;
+  height: 8rem;
+  background: linear-gradient(to right, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1), transparent);
+  border-radius: 50%;
+  filter: blur(32px);
+}
+
+.atmospheric-cloud-2 {
+  position: absolute;
+  top: 12rem;
+  right: 33.33%;
+  width: 12rem;
+  height: 6rem;
+  background: linear-gradient(to left, rgba(99, 102, 241, 0.18), rgba(139, 92, 246, 0.12), transparent);
+  border-radius: 50%;
+  filter: blur(24px);
+}
+
+.shooting-star {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background: #bfdbfe;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(191, 219, 254, 0.8);
+}
+
+/* Auth content positioning - ensuring it doesn't affect background */
+.auth-content {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto; /* Allow content to scroll if needed */
+}
+
+/* Ensure body doesn't scroll background */
+body {
+  overflow-x: hidden;
+}
