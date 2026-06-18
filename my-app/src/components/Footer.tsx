@@ -91,7 +91,7 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              Creating stunning animated experiences with cutting-edge technology and beautiful design.
+              Learn real skills through structured courses, interactive quizzes, and progress you can actually see — or teach your own. Elevana makes learning stick.
             </motion.p>
 
             {/* Newsletter Signup */}

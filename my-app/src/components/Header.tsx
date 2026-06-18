@@ -15,11 +15,9 @@ import AnimatedButton from "./AnimatedButton"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { name: "Features", href: "#features", description: "Discover our amazing features" },
- // { name: "Gallery", href: "#gallery", description: "View our stunning gallery" },
-  //{ name: "Pricing", href: "#pricing", description: "Choose your perfect plan" },
-  { name: "FAQ", href: "#faq", description: "Get answers to common questions" },
-  { name: "Contact", href: "#contact", description: "Get in touch with us" },
+  { name: "Features", href: "#features", description: "See how learning works on Elevana" },
+  { name: "FAQ", href: "#faq", description: "Answers to common questions about learning" },
+  { name: "Contact", href: "#contact", description: "Get in touch with the Elevana team" },
 ]
 
 export default function Header() {

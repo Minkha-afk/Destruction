@@ -2,7 +2,7 @@
 
 import "@/styles/global.css";
 import { motion, useScroll, useTransform, easeOut } from "framer-motion"
-import { Star, Zap, Shield, Rocket, ChevronDown } from "lucide-react"
+import { ChevronDown, GraduationCap, ClipboardCheck, BarChart3, Trophy, MessageCircle, Users } from "lucide-react"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -12,66 +12,66 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import AnimatedButton from "@/components/AnimatedButton"
 
-// Features data
+// Features data — what Elevana gives learners and teachers
 const features = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Optimized performance with cutting-edge technology for instant results.",
+    icon: GraduationCap,
+    title: "Structured Courses",
+    description: "Level-by-level courses with videos, readings, and hands-on lessons that take you from the basics to real skills.",
   },
   {
-    icon: Shield,
-    title: "Secure & Private",
-    description: "Your data is protected with enterprise-grade security measures.",
+    icon: ClipboardCheck,
+    title: "Quizzes That Unlock",
+    description: "A short quiz follows every level — pass it to unlock the next one, so what you learn actually sticks.",
   },
   {
-    icon: Rocket,
-    title: "Easy Integration",
-    description: "Seamlessly integrate with your existing workflow in minutes.",
+    icon: BarChart3,
+    title: "Track Your Progress",
+    description: "A personal dashboard shows your enrolled courses, completion, quiz scores, and learning streaks at a glance.",
   },
   {
-    icon: Star,
-    title: "Premium Quality",
-    description: "Professional-grade results that exceed your expectations.",
+    icon: Trophy,
+    title: "Earn As You Learn",
+    description: "Collect badges and certificates as you complete levels and ace your assessments.",
   },
   {
-    icon: Zap,
-    title: "Real-time Updates",
-    description: "Get instant feedback and live updates as you work.",
+    icon: MessageCircle,
+    title: "Learn Together",
+    description: "Real-time course chat lets you ask questions and learn alongside fellow students in every course.",
   },
   {
-    icon: Shield,
-    title: "24/7 Support",
-    description: "Round-the-clock assistance from our expert team.",
+    icon: Users,
+    title: "Teach & Create",
+    description: "Become a teacher and build your own courses with levels, videos, and quizzes — then track how your students do.",
   },
 ]
 
-// FAQ data
+// FAQ data — about learning on Elevana
 const faqItems = [
   {
-    question: "How does the animation system work?",
+    question: "How do the courses work?",
     answer:
-      "Our animation system uses advanced Three.js technology combined with Framer Motion to create smooth, performant animations that work across all devices and browsers.",
+      "Every course is split into levels. Each level has a short video or reading followed by a quiz — pass the quiz to unlock the next level and steadily build real understanding.",
   },
   {
-    question: "Can I customize the animations?",
+    question: "Are the courses free?",
     answer:
-      "You have full control over timing, easing, and visual effects. Our intuitive interface makes it easy to create custom animations without coding.",
+      "You can browse the full catalog for free. Some courses are free and others are paid — enroll with a single click to unlock all of a course's levels and start learning right away.",
   },
   {
-    question: "Is it mobile-friendly?",
+    question: "How do quizzes and progress tracking work?",
     answer:
-      "Yes, all animations are optimized for mobile devices with automatic performance scaling and reduced motion support for accessibility.",
+      "After each level you take a quiz. Your dashboard keeps track of everything — the courses you're enrolled in, your completion, quiz scores, badges, and recent activity.",
   },
   {
-    question: "What file formats are supported?",
+    question: "Can I create and teach my own courses?",
     answer:
-      "We support all major image formats (JPG, PNG, GIF, WebP) and video formats (MP4, WebM). Files up to 100MB are supported on Pro plans.",
+      "Yes. Sign up as a teacher and use the studio to build courses with levels, videos, and quizzes — then see live insights into how your students are progressing.",
   },
   {
-    question: "Do you offer refunds?",
+    question: "What do I need to get started?",
     answer:
-      "We offer a 30-day money-back guarantee. If you're not satisfied with our service, contact us for a full refund.",
+      "Just a browser. Create a free account as a learner or a teacher, explore the catalog, and start your first lesson in minutes — on desktop or mobile.",
   },
 ]
 
@@ -118,7 +118,7 @@ function Page() {
         <motion.div style={{ y: heroY }} className="container mx-auto text-center max-w-4xl">
           <motion.div initial={fadeInUp.initial} animate={fadeInUp.animate} transition={fadeInUp.transition}>
             <Badge variant="outline" className="mb-6 px-4 py-2 text-sm glassmorphism">
-              ✨ Serenity
+              ✨ Elevana · Learn by doing
             </Badge>
 
             <h1 className="font-space-grotesk font-bold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
@@ -149,9 +149,9 @@ function Page() {
   <section id="features" className="py-24 px-6 bg-transparent">
         <motion.div style={{ y: featuresY }} className="container mx-auto">
           <motion.div className="text-center mb-16" initial={fadeInUp.initial} animate={fadeInUp.animate} transition={fadeInUp.transition}>
-            <h2 className="font-space-grotesk font-bold text-3xl md:text-5xl mb-4">Powerful Features</h2>
+            <h2 className="font-space-grotesk font-bold text-3xl md:text-5xl mb-4">Built for how you learn</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to create professional animations and interactive experiences.
+              A complete learning experience — structured courses, quizzes that unlock, progress tracking, and a community to grow with.
             </p>
           </motion.div>
 
